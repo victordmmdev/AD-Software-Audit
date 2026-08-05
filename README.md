@@ -5,6 +5,10 @@ de software instalado em máquinas de um domínio Active Directory e correlacion
 cada item com vulnerabilidades conhecidas (CVEs), gerando um relatório de risco
 por host e por unidade organizacional (OU).
 
+<p align="center">
+  <img src="./demo.gif" width="900">
+</p>
+
 > ⚠️ **Aviso:** os dados em `data/simulated_inventory.csv` são **fictícios**,
 > criados apenas para fins de demonstração e estudo. Nenhuma empresa real está
 > representada.

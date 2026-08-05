@@ -1,0 +1,137 @@
+[
+  {
+    "software": "7-Zip",
+    "max_vulnerable_version": "21.06",
+    "cve": "CVE-2022-29072",
+    "severity": "High",
+    "cvss": 7.8,
+    "description": "Elevação de privilégio e execução de código via manipulação de arquivos .7z no Windows.",
+    "link": "https://nvd.nist.gov/vuln/detail/CVE-2022-29072"
+  },
+  {
+    "software": "Adobe Acrobat Reader DC",
+    "max_vulnerable_version": "21.007.20099",
+    "cve": "CVE-2021-28550",
+    "severity": "Critical",
+    "cvss": 9.8,
+    "description": "Execução remota de código ao abrir um PDF malicioso.",
+    "link": "https://nvd.nist.gov/vuln/detail/CVE-2021-28550"
+  },
+  {
+    "software": "Adobe Acrobat Reader DC",
+    "max_vulnerable_version": "20.001.30020",
+    "cve": "CVE-2020-24432",
+    "severity": "High",
+    "cvss": 7.8,
+    "description": "Corrupção de memória permitindo execução de código arbitrário.",
+    "link": "https://nvd.nist.gov/vuln/detail/CVE-2020-24432"
+  },
+  {
+    "software": "Java 8 Update 181",
+    "max_vulnerable_version": "8.0.1810.13",
+    "cve": "CVE-2018-2938",
+    "severity": "High",
+    "cvss": 8.3,
+    "description": "Vulnerabilidade no componente Java SE que pode comprometer confidencialidade e integridade.",
+    "link": "https://nvd.nist.gov/vuln/detail/CVE-2018-2938"
+  },
+  {
+    "software": "Apache HTTP Server",
+    "max_vulnerable_version": "2.4.49",
+    "cve": "CVE-2021-41773",
+    "severity": "Critical",
+    "cvss": 9.8,
+    "description": "Path traversal e execução remota de código no Apache HTTP Server 2.4.49.",
+    "link": "https://nvd.nist.gov/vuln/detail/CVE-2021-41773"
+  },
+  {
+    "software": "OpenSSL",
+    "max_vulnerable_version": "1.1.1k",
+    "cve": "CVE-2021-3712",
+    "severity": "Medium",
+    "cvss": 6.1,
+    "description": "Leitura fora dos limites de buffer ao processar strings ASN1_STRING.",
+    "link": "https://nvd.nist.gov/vuln/detail/CVE-2021-3712"
+  },
+  {
+    "software": "Microsoft SQL Server 2016",
+    "max_vulnerable_version": "13.0.1601.5",
+    "cve": "CVE-2020-0618",
+    "severity": "High",
+    "cvss": 8.8,
+    "description": "Execução remota de código no componente Report Server do SQL Server.",
+    "link": "https://nvd.nist.gov/vuln/detail/CVE-2020-0618"
+  },
+  {
+    "software": "Adobe Flash Player",
+    "max_vulnerable_version": "32.0.0.465",
+    "cve": "CVE-2021-21017",
+    "severity": "Critical",
+    "cvss": 9.8,
+    "description": "Estouro de buffer heap que pode levar à execução arbitrária de código.",
+    "link": "https://nvd.nist.gov/vuln/detail/CVE-2021-21017"
+  },
+  {
+    "software": "PuTTY",
+    "max_vulnerable_version": "0.74",
+    "cve": "CVE-2021-33500",
+    "severity": "Medium",
+    "cvss": 5.9,
+    "description": "Vulnerabilidade de negação de serviço via nome de host malicioso.",
+    "link": "https://nvd.nist.gov/vuln/detail/CVE-2021-33500"
+  },
+  {
+    "software": "WinRAR",
+    "max_vulnerable_version": "5.70",
+    "cve": "CVE-2018-20250",
+    "severity": "Critical",
+    "cvss": 7.8,
+    "description": "Falha na biblioteca UNACEV2.dll permite escrita de arquivos arbitrários (execução de código).",
+    "link": "https://nvd.nist.gov/vuln/detail/CVE-2018-20250"
+  },
+  {
+    "software": "Google Chrome",
+    "max_vulnerable_version": "110.0.5481.104",
+    "cve": "CVE-2023-2033",
+    "severity": "High",
+    "cvss": 8.8,
+    "description": "Confusão de tipos no motor V8 explorável para execução de código.",
+    "link": "https://nvd.nist.gov/vuln/detail/CVE-2023-2033"
+  },
+  {
+    "software": "Google Chrome",
+    "max_vulnerable_version": "90.0.4430.212",
+    "cve": "CVE-2021-30551",
+    "severity": "High",
+    "cvss": 8.8,
+    "description": "Confusão de tipos no V8 explorada ativamente antes da correção.",
+    "link": "https://nvd.nist.gov/vuln/detail/CVE-2021-30551"
+  },
+  {
+    "software": "Mozilla Firefox",
+    "max_vulnerable_version": "102.0",
+    "cve": "CVE-2022-38478",
+    "severity": "High",
+    "cvss": 8.8,
+    "description": "Uso de memória após liberação (use-after-free) no WebGL.",
+    "link": "https://nvd.nist.gov/vuln/detail/CVE-2022-38478"
+  },
+  {
+    "software": "VLC Media Player",
+    "max_vulnerable_version": "3.0.16",
+    "cve": "CVE-2021-25801",
+    "severity": "Medium",
+    "cvss": 6.5,
+    "description": "Leitura fora dos limites no demuxer de arquivos MP4.",
+    "link": "https://nvd.nist.gov/vuln/detail/CVE-2021-25801"
+  },
+  {
+    "software": "Python",
+    "max_vulnerable_version": "3.9.0",
+    "cve": "CVE-2021-3177",
+    "severity": "Critical",
+    "cvss": 9.8,
+    "description": "Estouro de buffer no módulo ctypes que pode levar à execução de código.",
+    "link": "https://nvd.nist.gov/vuln/detail/CVE-2021-3177"
+  }
+]

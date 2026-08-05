@@ -1,0 +1,19 @@
+hostname,ou,os,software,version,cve,severity,cvss,description,link
+WKS-FIN-001,OU=Financeiro,Windows 10 22H2,Google Chrome,110.0.5481.104,CVE-2023-2033,High,8.8,Confusão de tipos no motor V8 explorável para execução de código.,https://nvd.nist.gov/vuln/detail/CVE-2023-2033
+WKS-FIN-001,OU=Financeiro,Windows 10 22H2,7-Zip,19.00,CVE-2022-29072,High,7.8,Elevação de privilégio e execução de código via manipulação de arquivos .7z no Windows.,https://nvd.nist.gov/vuln/detail/CVE-2022-29072
+WKS-FIN-001,OU=Financeiro,Windows 10 22H2,Adobe Acrobat Reader DC,21.007.20099,CVE-2021-28550,Critical,9.8,Execução remota de código ao abrir um PDF malicioso.,https://nvd.nist.gov/vuln/detail/CVE-2021-28550
+WKS-FIN-002,OU=Financeiro,Windows 10 22H2,Mozilla Firefox,102.0,CVE-2022-38478,High,8.8,Uso de memória após liberação (use-after-free) no WebGL.,https://nvd.nist.gov/vuln/detail/CVE-2022-38478
+WKS-FIN-002,OU=Financeiro,Windows 10 22H2,Java 8 Update 181,8.0.1810.13,CVE-2018-2938,High,8.3,Vulnerabilidade no componente Java SE que pode comprometer confidencialidade e integridade.,https://nvd.nist.gov/vuln/detail/CVE-2018-2938
+WKS-RH-002,OU=RH,Windows 10 22H2,VLC Media Player,3.0.16,CVE-2021-25801,Medium,6.5,Leitura fora dos limites no demuxer de arquivos MP4.,https://nvd.nist.gov/vuln/detail/CVE-2021-25801
+WKS-TI-001,OU=TI,Windows 11 23H2,PuTTY,0.74,CVE-2021-33500,Medium,5.9,Vulnerabilidade de negação de serviço via nome de host malicioso.,https://nvd.nist.gov/vuln/detail/CVE-2021-33500
+WKS-TI-001,OU=TI,Windows 11 23H2,WinRAR,5.70,CVE-2018-20250,Critical,7.8,Falha na biblioteca UNACEV2.dll permite escrita de arquivos arbitrários (execução de código).,https://nvd.nist.gov/vuln/detail/CVE-2018-20250
+WKS-TI-001,OU=TI,Windows 11 23H2,Python,3.9.0,CVE-2021-3177,Critical,9.8,Estouro de buffer no módulo ctypes que pode levar à execução de código.,https://nvd.nist.gov/vuln/detail/CVE-2021-3177
+SRV-WEB-001,OU=Servidores,Windows Server 2019,Apache HTTP Server,2.4.49,CVE-2021-41773,Critical,9.8,Path traversal e execução remota de código no Apache HTTP Server 2.4.49.,https://nvd.nist.gov/vuln/detail/CVE-2021-41773
+SRV-WEB-001,OU=Servidores,Windows Server 2019,OpenSSL,1.1.1k,CVE-2021-3712,Medium,6.1,Leitura fora dos limites de buffer ao processar strings ASN1_STRING.,https://nvd.nist.gov/vuln/detail/CVE-2021-3712
+SRV-DB-001,OU=Servidores,Windows Server 2016,Microsoft SQL Server 2016,13.0.1601.5,CVE-2020-0618,High,8.8,Execução remota de código no componente Report Server do SQL Server.,https://nvd.nist.gov/vuln/detail/CVE-2020-0618
+SRV-FILE-001,OU=Servidores,Windows Server 2019,7-Zip,16.02,CVE-2022-29072,High,7.8,Elevação de privilégio e execução de código via manipulação de arquivos .7z no Windows.,https://nvd.nist.gov/vuln/detail/CVE-2022-29072
+SRV-FILE-001,OU=Servidores,Windows Server 2019,Adobe Acrobat Reader DC,20.001.30020,CVE-2021-28550,Critical,9.8,Execução remota de código ao abrir um PDF malicioso.,https://nvd.nist.gov/vuln/detail/CVE-2021-28550
+SRV-FILE-001,OU=Servidores,Windows Server 2019,Adobe Acrobat Reader DC,20.001.30020,CVE-2020-24432,High,7.8,Corrupção de memória permitindo execução de código arbitrário.,https://nvd.nist.gov/vuln/detail/CVE-2020-24432
+WKS-VEN-001,OU=Vendas,Windows 10 21H2,Google Chrome,90.0.4430.212,CVE-2023-2033,High,8.8,Confusão de tipos no motor V8 explorável para execução de código.,https://nvd.nist.gov/vuln/detail/CVE-2023-2033
+WKS-VEN-001,OU=Vendas,Windows 10 21H2,Google Chrome,90.0.4430.212,CVE-2021-30551,High,8.8,Confusão de tipos no V8 explorada ativamente antes da correção.,https://nvd.nist.gov/vuln/detail/CVE-2021-30551
+WKS-VEN-001,OU=Vendas,Windows 10 21H2,Adobe Flash Player,32.0.0.465,CVE-2021-21017,Critical,9.8,Estouro de buffer heap que pode levar à execução arbitrária de código.,https://nvd.nist.gov/vuln/detail/CVE-2021-21017

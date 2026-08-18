@@ -46,7 +46,10 @@ def load_local_db(path: Path):
 def version_leq(v1: str, v2: str) -> bool:
     """Compara versões no formato 'a.b.c.d' — retorna True se v1 <= v2."""
     def parts(v):
-        return [int(x) for x in v.replace("-", ".").split(".") if x.isdigit()]
+        values = [int(x) for x in v.replace("-", ".").split(".") if x.isdigit()]
+        if not values:
+            raise ValueError(f"versão sem componentes numéricos: {v!r}")
+        return values
     p1, p2 = parts(v1), parts(v2)
     length = max(len(p1), len(p2))
     p1 += [0] * (length - len(p1))
@@ -153,7 +156,7 @@ def compute_host_risk(findings):
 def write_csv_report(findings, path: Path):
     fields = ["hostname", "ou", "os", "software", "version", "cve", "severity", "cvss", "description", "link"]
     with open(path, "w", newline="", encoding="utf-8") as f:
-        writer = csv.DictWriter(f, fieldnames=fields)
+        writer = csv.DictWriter(f, fieldnames=fields, lineterminator="\n")
         writer.writeheader()
         writer.writerows(findings)
 
@@ -234,7 +237,7 @@ def main():
     write_csv_report(findings, csv_path)
     write_markdown_report(findings, host_scores, host_counts, md_path, total_hosts, len(inventory))
 
-    print(f"\n✔ {len(findings)} vulnerabilidades identificadas em {len(host_scores)} hosts.")
+    print(f"\n✔ {len(findings)} correspondências candidatas em {len(host_scores)} hosts.")
     print(f"✔ Relatório CSV: {csv_path}")
     print(f"✔ Relatório Markdown: {md_path}")
 

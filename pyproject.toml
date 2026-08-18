@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ad-software-audit"
+version = "0.1.0"
+description = "Synthetic software inventory and candidate CVE correlation lab"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+online = ["requests>=2.32"]
+dev = ["pytest>=8.0"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -2,7 +2,7 @@
 
 Projeto de portfólio em segurança da informação. Simula a coleta de inventário
 de software instalado em máquinas de um domínio Active Directory e correlaciona
-cada item com vulnerabilidades conhecidas (CVEs), gerando um relatório de risco
+cada item com uma base demonstrativa de CVEs candidatas, gerando um relatório de priorização
 por host e por unidade organizacional (OU).
 
 <p align="center">
@@ -21,7 +21,7 @@ uma auditoria interna ou um programa de vulnerability management) é responder:
 isso está?"**. Esse projeto automatiza essa resposta:
 
 1. Coleta (aqui, simula) o inventário de software por host.
-2. Correlaciona cada software/versão com vulnerabilidades públicas conhecidas.
+2. Correlaciona cada software/versão com referências candidatas para validação.
 3. Calcula um score de risco por host, priorizando o que precisa de atenção primeiro.
 4. Gera um relatório em Markdown e CSV, pronto para ser compartilhado.
 
@@ -37,22 +37,33 @@ ad-software-audit/
 ├── reports/
 │   ├── report.csv                  # saída em CSV (para importar em Excel/Power BI)
 │   └── report.md                   # saída em Markdown (para leitura direta no GitHub)
-└── requirements.txt
+├── tests/                         # testes de comparação, correlação e score
+└── pyproject.toml                 # metadados e dependências opcionais
 ```
 
 ## Como rodar
 
 ```bash
-pip install -r requirements.txt
+python -m venv .venv
+.venv/bin/python -m pip install -e '.[dev]'
 
 # Modo offline (usa a base local known_vulnerabilities.json) — não precisa de internet
-python src/risk_analysis.py --offline
+.venv/bin/python src/risk_analysis.py --offline
 
 # Modo online (consulta a API pública do NVD em tempo real)
-python src/risk_analysis.py --online
+.venv/bin/python -m pip install -e '.[online]'
+.venv/bin/python src/risk_analysis.py --online
 ```
 
 O relatório é gerado em `reports/report.md` e `reports/report.csv`.
+
+Execute a validação automatizada com:
+
+```bash
+.venv/bin/python -m pytest
+```
+
+> A correlação por nome e versão é uma triagem educacional. Uma correspondência não confirma que o host seja vulnerável; produtos reais exigem CPE, intervalos de versão afetada e validação contextual.
 
 ## Metodologia de score de risco
 
@@ -98,7 +109,7 @@ CSV real coletado — o restante do pipeline funciona sem alterações.
 
 - [ ] Adicionar suporte a CPE (Common Platform Enumeration) para correlação mais precisa com o NVD
 - [ ] Exportar relatório também em HTML com gráficos (severidade por OU, evolução mês a mês)
-- [ ] Adicionar testes automatizados (pytest) para as funções de comparação de versão
+- [x] Adicionar testes automatizados para comparação, correlação e score
 - [ ] Publicar uma versão com coleta real via PowerShell Remoting contra um lab (GOAD)
 
 ## Disclaimer
@@ -109,4 +120,4 @@ sem autorização explícita do proprietário.
 
 ## Autor
 
-Victor Magaldi — [LinkedIn](#) · [GitHub](#)
+Victor Magaldi — [LinkedIn](https://www.linkedin.com/in/victormmagaldi/) · [GitHub](https://github.com/victordmmdev)
